@@ -1,0 +1,42 @@
+section h2 {
+    alignment: center;
+}
+
+.container.feature__container {
+    /*alignment: center;*/
+    display: grid;
+    /*grid-template-columns: 25% 30%;*/
+    grid-template-columns: 30% 50%;
+    gap: 7%;
+}
+
+.feature__names {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 1rem 7rem;
+    gap: 1rem;
+}
+
+form {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    gap: 1rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid var(--color-primary-variant);
+    resize: none;
+    color: var(--color-white)
+}
+
+.calculation__container {
+    text-align: center;
+    padding-top: 2rem;
+}

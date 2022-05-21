@@ -1,0 +1,11 @@
+export async function getSalary(data) {
+    console.log(data)
+    const response = await fetch(`https://fair-compensation.herokuapp.com/get_salary`, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(data)
+    })
+    const response_json = await response.json()
+    console.log(response_json)
+    return response_json;
+}

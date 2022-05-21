@@ -1,0 +1,50 @@
+{
+  "Gender": [
+    "diverse",
+    "female",
+    "male"
+  ],
+  "City": [
+    "amsterdam",
+    "berlin",
+    "cologne",
+    "frankfurt",
+    "hamburg",
+    "munich",
+    "other",
+    "stuttgart"
+  ],
+  "Seniority": [
+    "junior",
+    "lead",
+    "middle",
+    "other",
+    "senior"
+  ],
+  "Position": [
+    "backend developer",
+    "data engineer",
+    "data scientist",
+    "devops engineer",
+    "frontend developer",
+    "fullstack developer",
+    "machine learning engineer",
+    "manager",
+    "mobile developer",
+    "other",
+    "qa engineer",
+    "software developer",
+    "software engineer"
+  ],
+  "Company_Size": [
+    "1-100",
+    "1000+",
+    "101-1000"
+  ],
+  "Company_Type": [
+    "consulting or agency",
+    "other",
+    "product",
+    "startup"
+  ]
+}
