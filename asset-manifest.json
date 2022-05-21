@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fair-compensation-frontend/static/css/main.c12d3da7.css",
+    "main.js": "/fair-compensation-frontend/static/js/main.61c00bde.js",
+    "index.html": "/fair-compensation-frontend/index.html",
+    "main.c12d3da7.css.map": "/fair-compensation-frontend/static/css/main.c12d3da7.css.map",
+    "main.61c00bde.js.map": "/fair-compensation-frontend/static/js/main.61c00bde.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c12d3da7.css",
+    "static/js/main.61c00bde.js"
+  ]
+}
