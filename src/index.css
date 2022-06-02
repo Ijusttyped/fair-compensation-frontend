@@ -11,13 +11,12 @@
 }
 
 :root {
-    --color-bg: #222831;
-    --color-bg-variant: #393E46;
-    --color-primary: #00ADB5;
-    --color-primary-variant: #EEEEEE;
-    --color-white: #fff;
-    --color-light: rgba(255, 255, 255, 0.6);
-    --color-green-light: #8fc3c5;
+    --color-bg: #FFF8E5;
+    --color-bg-variant: #FFB344;
+    --color-primary: #013130FF;
+    --color-primary-variant: #E05D5D;
+    --color-white: black;
+    --color-light: #013130FF;
 
     --transition: all 400ms ease;
 
@@ -32,7 +31,7 @@ body {
     /*background: linear-gradient(to right, var(--color-primary) 0%, var(--color-bg) 100%);*/
     /*background: linear-gradient(var(--color-bg) 40%, var(--color-primary));*/
     /*background: var(--color-bg);*/
-    color: var(--color-green-light);
+    color: var(--color-primary);
     line-height: 1.7;
     /*background-image: url("../src/assets/bg-texture.png");*/
 }
@@ -44,7 +43,7 @@ body {
 }
 
 section {
-    margin-top: 6rem;
+    margin-top: 4rem;
 }
 
 section > h2,
@@ -65,7 +64,7 @@ section > h2 {
 .btn {
     width: max-content;
     display: inline-block;
-    color: var(--color-primary);
+    color: var(--color-light);
     padding: 0.5rem 1.2rem;
     border-radius: 0.4rem;
     cursor: pointer;
