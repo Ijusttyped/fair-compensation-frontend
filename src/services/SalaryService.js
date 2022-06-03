@@ -9,3 +9,12 @@ export async function getSalary(data) {
     console.log(response_json)
     return response_json;
 }
+
+export async function pingService() {
+    const response = await fetch('https://fair-compensation.herokuapp.com/ping', {
+        method: 'GET'
+    })
+    const status = response.statusCode
+    console.log("Pinged salary service. Got status code", status)
+    return status;
+}

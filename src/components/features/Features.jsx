@@ -26,7 +26,7 @@ const Features = () => {
     const [calculation, setCalculation] = useState(0)
     const updateCalculation = (text) => setCalculation(text)
     const currentTime = new Date().getFullYear() + "-01-01 00:00:00"
-    const sendRequest = (e) => {
+    const sendRequest = () => {
         console.log("Sending request...")
         const salary = getSalary([
             {
