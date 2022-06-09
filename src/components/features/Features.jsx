@@ -1,13 +1,25 @@
 import React from 'react'
 import "./features.css"
+import LoadingSpinner from "./LoadingSpinner";
 import {useRef, useState} from "react";
-import {getSalary} from "../../services/SalaryService";
+import {getSalary, pingService} from "../../services/SalaryService";
 import labels from "../../assets/labels.json";
 
 
 const Features = () => {
     const light = "var(--color-primary-variant)"
     const dark = "transparent"
+
+    const [isLoading, setIsLoading] = useState(true)
+    const handlePing = () => {
+        return pingService()
+            .then((response) => response.statusCode)
+            .then(() => setIsLoading(false));
+    }
+    // Ping service on page load
+    let pinged = handlePing()
+    console.log(pinged)
+
     const ageDefault = 30
     const experienceDefault = 6
     const [requestData, setRequestData] = useState({
@@ -28,6 +40,7 @@ const Features = () => {
     const currentTime = new Date().getFullYear() + "-01-01 00:00:00"
     const sendRequest = () => {
         console.log("Sending request...")
+        setIsLoading(true)
         const salary = getSalary([
             {
                 "Timestamp": currentTime,
@@ -36,6 +49,7 @@ const Features = () => {
         );
         salary.then((result) => {
             updateCalculation(result[0]["Salary_Yearly"])
+            setIsLoading(false)
         })
     }
     return (
@@ -80,10 +94,10 @@ const Features = () => {
                 </div>
             </div>
             <div className={"calculation__container"}>
-                <button type={"submit"} onClick={sendRequest} className={"btn btn-primary"}>Calculate</button>
+                <button type={"submit"} onClick={sendRequest} disabled={isLoading} className={"btn btn-primary"}>Calculate</button>
                 <div className={"calculation__result"}>
                     <h4>Your estimated annual salary:</h4>
-                    <h2>{Math.round(calculation)} €</h2>
+                    {isLoading ? <LoadingSpinner /> : <h2>{Math.round(calculation)} €</h2>}
                 </div>
 
             </div>
