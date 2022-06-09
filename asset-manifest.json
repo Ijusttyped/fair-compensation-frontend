@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/fair-compensation-frontend/static/css/main.9b736075.css",
-    "main.js": "/fair-compensation-frontend/static/js/main.8d358dfa.js",
+    "main.css": "/fair-compensation-frontend/static/css/main.8dbdc9ec.css",
+    "main.js": "/fair-compensation-frontend/static/js/main.365aa3c4.js",
     "index.html": "/fair-compensation-frontend/index.html",
-    "main.9b736075.css.map": "/fair-compensation-frontend/static/css/main.9b736075.css.map",
-    "main.8d358dfa.js.map": "/fair-compensation-frontend/static/js/main.8d358dfa.js.map"
+    "main.8dbdc9ec.css.map": "/fair-compensation-frontend/static/css/main.8dbdc9ec.css.map",
+    "main.365aa3c4.js.map": "/fair-compensation-frontend/static/js/main.365aa3c4.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b736075.css",
-    "static/js/main.8d358dfa.js"
+    "static/css/main.8dbdc9ec.css",
+    "static/js/main.365aa3c4.js"
   ]
 }
