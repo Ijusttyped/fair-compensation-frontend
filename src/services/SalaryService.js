@@ -1,6 +1,6 @@
 export async function getSalary(data) {
     console.log(data)
-    const response = await fetch(`https://fair-compensation.herokuapp.com/get_salary`, {
+    const response = await fetch(`https://fair-compensation-backend.onrender.com/get_salary`, {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(data)
@@ -11,7 +11,7 @@ export async function getSalary(data) {
 }
 
 export async function pingService() {
-    return await fetch('https://fair-compensation.herokuapp.com/ping', {
+    return await fetch('https://fair-compensation-backend.onrender.com/ping', {
         method: 'GET'
     });
     // const status = response.statusCode
